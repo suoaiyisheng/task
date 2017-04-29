@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 8.9rem;
+  background-color: #5fc0cd;
+  font-size: 3.2rem;
+  color: white;
+  box-sizing: border-box;
+  padding: 0 3rem; }
+
+.header_middle {
+  font-size: 3.6rem; }
+
+.header_middle, .header_left, .header_right {
+  line-height: 8.9rem; }
+
+/*# sourceMappingURL=header.css.map */

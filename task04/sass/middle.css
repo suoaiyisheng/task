@@ -1,0 +1,52 @@
+@charset "UTF-8";
+input::-webkit-input-placeholder {
+  color: #e1e5e7; }
+
+銆€銆€
+input::-moz-placeholder {
+  color: #e1e5e7; }
+
+銆€銆€
+input::-ms-input-placeholder {
+  color: #e1e5e7; }
+
+.phoneNum, .passWord {
+  padding: 2rem 0 2rem 0;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 2rem; }
+
+.passWord {
+  margin-bottom: 7rem; }
+
+.phoneNum_icon, .passWord_icon {
+  float: left;
+  padding: 0 4.7rem; }
+  .phoneNum_icon img, .passWord_icon img {
+    max-width: 2.7rem;
+    max-height: 3.2rem; }
+
+.phoneNum_ipt, .passWord_ipt {
+  border: 0;
+  border-left: 0.1px solid #eaedee;
+  font-size: 3.2rem;
+  padding-left: 3.6rem; }
+
+.signUp {
+  height: 10rem; }
+  .signUp button {
+    width: 100%;
+    line-height: 10rem;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 3.6rem;
+    text-align: center;
+    background-color: #5fc0cd; }
+  .signUp a {
+    color: #5fc0cd;
+    font-size: 3.2rem;
+    float: right;
+    margin-top: 2.2rem; }
+
+/*# sourceMappingURL=middle.css.map */

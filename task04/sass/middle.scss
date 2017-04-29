@@ -1,0 +1,46 @@
+@import 'mixin.scss';
+	input::-webkit-input-placeholder {color:#e1e5e7;}　　
+	input::-moz-placeholder {color:#e1e5e7;}　　
+	input::-ms-input-placeholder {color:#e1e5e7;}
+.phoneNum,.passWord{
+	padding:2rem 0 2rem 0;
+    box-sizing:border-box;
+    background-color:white;
+    margin-top:2rem;
+}
+.passWord{
+	margin-bottom:7rem;
+}
+.phoneNum_icon,.passWord_icon{
+	img{
+		max-width:2.7rem;
+		max-height:3.2rem;
+	}
+	float:left;
+	padding:0 4.7rem;
+}
+.phoneNum_ipt,.passWord_ipt{
+	border:0;
+	border-left:0.1px solid #eaedee;
+	@include fontSize(3.2rem);
+	padding-left:3.6rem;
+}
+.signUp{
+	height:10rem;
+	button{
+		width:100%;
+		line-height:10rem;
+		border:0;
+	    outline:0;
+	    color:white;
+	    @include fontSize(3.6rem);
+	    text-align:center;
+	    background-color:$blue;
+	}
+	a{
+		color:#5fc0cd;
+		@include fontSize(3.2rem);
+		float:right;
+		margin-top:2.2rem;
+	}
+}
