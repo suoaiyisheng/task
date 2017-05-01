@@ -3,13 +3,13 @@ header{
 	width:100%;
 	height:4.5rem;
 	background-color:$blue;
-	@include fontSize(3.2rem);
+	@include fontSize(1.6rem);
 	color:white;
 	box-sizing:border-box;
 	position:relative;
 }
 .header_middle{
-	@include fontSize(3.6rem);
+	@include fontSize(1.8rem);
 	display:table;
     margin:0 auto;
 }
