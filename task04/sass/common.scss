@@ -9,9 +9,9 @@
 body,html{
 	height:100%;
 	width:100%;
+	@include fontSize(10px);
 }
 body{
-	@include fontSize(10px);
 	font-family:'STHeiti-Light';
 	background-color:#eff0f4;
 }

@@ -3,10 +3,10 @@
   src: url("font/STHeiti-Light.eot") format("eot"), url("font/STHeiti-Light.woff") format("woff"), url("font/STHeiti-Light.ttf") format("ttf"); }
 body, html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-size: 10px; }
 
 body {
-  font-size: 10px;
   font-family: 'STHeiti-Light';
   background-color: #eff0f4; }
 
