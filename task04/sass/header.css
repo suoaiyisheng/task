@@ -1,18 +1,28 @@
 header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 8.9rem;
+  height: 4.5rem;
   background-color: #5fc0cd;
   font-size: 3.2rem;
   color: white;
   box-sizing: border-box;
-  padding: 0 3rem; }
+  position: relative; }
 
 .header_middle {
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  display: table;
+  margin: 0 auto; }
 
 .header_middle, .header_left, .header_right {
-  line-height: 8.9rem; }
+  line-height: 4.5rem; }
+
+.header_left, .header_right {
+  position: absolute;
+  top: 0; }
+
+.header_left {
+  left: 3rem; }
+
+.header_right {
+  right: 3rem; }
 
 /*# sourceMappingURL=header.css.map */
