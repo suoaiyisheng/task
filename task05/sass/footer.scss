@@ -1,13 +1,17 @@
 footer{
 	margin-top: 49px;
+	margin-bottom:20px;
     display:flex;
     justify-content:space-between;
+    position: fixed;
+    bottom:0;
+    width:100%;
 }
 .footer_left,.footer_right{
 	display: flex;
 	border: 1px solid #5fc0cd;
 	border-radius:5px;
-	width: 157px;
+	width:45%;
 	height: 45px;
 	display: inline-block;
 	p{
