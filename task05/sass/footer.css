@@ -1,9 +1,7 @@
 footer {
   margin-top: 49px;
-  margin-bottom: 20px;
-  position: fixed;
-  bottom: 0px;
-  width: 100%; }
+  display: flex;
+  justify-content: space-between; }
 
 .footer_left, .footer_right {
   display: flex;
@@ -13,20 +11,18 @@ footer {
   height: 45px;
   display: inline-block; }
   .footer_left p, .footer_right p {
-    margin: auto;
+    margin: auoto;
     font-size: 17px;
     font-weight: 600; }
 
 .footer_left {
   margin-left: 18px;
   margin-right: 16px;
-  float: left;
   background-color: white;
   color: #5fc0cd; }
 
 .footer_right {
   margin-right: 18px;
-  float: right;
   background-color: #5fc0cd;
   color: white; }
 
