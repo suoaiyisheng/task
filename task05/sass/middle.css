@@ -54,10 +54,12 @@ main {
   color: #e26163;
   font-weight: 700; }
 
+.main_intro {
+  position: relative; }
+
 .intro_right {
   font-size: 13px;
-  margin-left: 90px;
-  display: block;
-  transform: translateY(-70%); }
+  margin-left: 91px;
+  transform: translateY(-16px); }
 
 /*# sourceMappingURL=middle.css.map */

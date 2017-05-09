@@ -1,7 +1,8 @@
 footer {
   margin-top: 49px;
-  display: flex;
-  justify-content: space-between; }
+  position: fixed;
+  bottom: 20px;
+  width: 100%; }
 
 .footer_left, .footer_right {
   display: flex;
@@ -18,11 +19,13 @@ footer {
 .footer_left {
   margin-left: 18px;
   margin-right: 16px;
+  float: left;
   background-color: white;
   color: #5fc0cd; }
 
 .footer_right {
   margin-right: 18px;
+  float: right;
   background-color: #5fc0cd;
   color: white; }
 

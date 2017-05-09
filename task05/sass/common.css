@@ -8,6 +8,7 @@ body, html {
 
 body {
   font-size: 18px;
-  font-family: 'STHeiti-Light'; }
+  font-family: 'STHeiti-Light';
+  position: relative; }
 
 /*# sourceMappingURL=common.css.map */
