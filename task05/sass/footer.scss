@@ -1,0 +1,30 @@
+footer{
+	margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_left,.footer_right{
+	display: flex;
+	border: 1px solid #5fc0cd;
+	border-radius:5px;
+	width: 157px;
+	height: 45px;
+	display: inline-block;
+	p{
+		margin: auoto;
+		font-size: 17px;
+	    font-weight: 600;
+	}
+}
+.footer_left{
+	margin-left:18px;
+	margin-right: 16px;
+	background-color: white;
+	color: #5fc0cd;
+}
+.footer_right{
+    margin-right: 18px;
+	background-color: #5fc0cd;
+	color: white;
+	
+}

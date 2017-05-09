@@ -1,0 +1,79 @@
+%center{
+	vertical-align:-100%;
+}
+%left{
+	padding-right:10px;
+	color:#9f9f9f;
+	border-right:1px solid #e1e5e7;
+	margin-right:13px;
+}
+
+main{
+	height:322px;
+	display:flex;
+	flex-direction: column;
+	font-size:16px;
+}
+.main_layout{
+	flex:1;
+	position:relative;
+}
+.main_border{
+	border-bottom:1px solid #e1e5e7;
+	margin-left:30.5px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+}
+.main_title {
+		border-bottom:1px solid #e1e5e7;
+		span{
+		   padding-left:14px;
+		   margin-left:14px;
+		   border-left:3px solid #5fc0cd;
+		   color:black;
+		   font-weight:600;
+		   @extend %center;
+		 }
+}
+.main_baseInfor{
+	span{
+		@extend %center;
+	}
+	img{
+      width:12px;
+      height:11.5px;
+      margin-right:3px;
+	}
+	font-weight:550;
+}
+.main_baseInfor_left{
+	margin-right:20px;
+}
+.main_workYear,
+.main_workTime,
+.main_price,
+.main_intro
+{
+	span{
+		@extend %center;
+	}
+}
+.workYear_left,
+.workTime_left,
+.price_left,
+.intro_left
+{
+    @extend %left;
+}
+.price_right{
+	color:#e26163;
+	font-weight:700;
+}
+.intro_right{
+	font-size:13px;
+	margin-left:90px;
+	display:block;
+	transform:translateY(-70%);
+}

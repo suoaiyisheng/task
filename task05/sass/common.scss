@@ -1,0 +1,15 @@
+@font-face{
+	 font-family: 'STHeiti-Light';
+     src: url('font/STHeiti-Light.eot') format('eot'),
+          url('font/STHeiti-Light.woff') format('woff'), 
+          url('font/STHeiti-Light.otf') format('otf');
+}
+body,html{
+	height:100%;
+	width:100%;
+	overflow-x:hidden;
+}
+body{
+	font-size:18px;
+	font-family:'STHeiti-Light';
+}
