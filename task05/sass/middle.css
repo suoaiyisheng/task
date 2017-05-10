@@ -1,9 +1,3 @@
-.main_title span, .main_baseInfor span, .main_workYear span,
-.main_workTime span,
-.main_price span,
-.main_intro span {
-  vertical-align: -100%; }
-
 .workYear_left,
 .workTime_left,
 .price_left,
@@ -18,7 +12,8 @@ main {
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  margin-top: 218px; }
+  margin-top: 218px;
+  line-height: 53.5px; }
 
 .main_layout {
   flex: 1;
@@ -61,6 +56,7 @@ main {
 .intro_right {
   font-size: 13px;
   margin-left: 91px;
-  transform: translateY(-16px); }
+  line-height: normal;
+  transform: translateY(-35px); }
 
 /*# sourceMappingURL=middle.css.map */
