@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>把酒祝东风</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+	*{
+		box-sizing:border-box;
+	}
+	body,html{
+		height:100%;
+		width:100%;
+	}
+	body{
+		background:url(psb.png);
+		background-size:cover;
+    font-family:'楷体';
+    position:relative;
+    display:flex;
+	}
+  .enter{
+    height:500px;
+    width:300px;
+    cursor:pointer;
+    position:absolute;
+    top:35%;
+    left:45%;
+  }
+  .enter:hover{
+        border:3px solid #c3272b;
+  }
+/**弹出框入口**/
+    .Widget{
+    	height:257px;
+    	width:450px;
+    	margin:auto;
+      display:none;
+    }
+    header{
+    	height:123px;
+    	padding: 18px 28px 20px;
+    	background:url(早樱.jpg);
+    	background-size:450px 123px;
+      border-radius:4px;
+    }
+    header img{
+    	height:85px;
+    	width:85px;
+      border-radius:50%;
+    	float:left;
+    	box-shadow:0 0 4px black;
+    }
+    header p{
+      margin-left:95px;
+    }
+    header p:nth-child(2){
+      font-size:23px;
+      line-height:60px;
+    }
+    /**中间部分**/
+    .middle{
+      height:73px;
+      background:-webkit-linear-gradient(top,white,#fbe2e8); 
+      display:flex;
+      border-bottom: 1px solid #d4d4d4;
+    }
+    .middle a{
+      flex:1 1 auto;
+      text-align: center;
+      color:black;
+      text-decoration:none;
+    }
+    .middle a strong{
+    text-shadow:1px 2px 3px #f00;
+    }
+    .middle p{
+      margin-top:20px;
+      font-weight:bold;
+      color:#f3f8f1;
+      text-shadow:-2px -2px 3px black;
+    }
+    /**last**/
+    ul{
+      height:59px;
+      padding:11px 0 11px 0;
+      background-color:#fbe2e8;
+      display:flex;
+    }
+    ul li{
+      flex:1 1 auto;
+      padding:0px 50px;
+    }
+    ul li a{
+      height:50px;
+      width:37px;
+    }
+	</style>
+</head>
+<body>
+<div class="enter"></div>
+<div class="Widget">
+    <header>
+     <a href="#!"><img src="avater.jpg"></a>
+     <p>小雨滴滴滴</p>
+     <p>把酒祝东风，且祝山河与共的从容</p>
+    </header>
+    <div class="middle">
+       <a href="!#">
+        <strong>生死不离</strong>
+        <p>蝉生</p>
+       </a>
+       <a href="!#">
+       <strong>莫逆之交</strong>
+       <p>心佩乾坤</p>
+       </a>
+       <a href="!#">
+       <strong>肝胆相照</strong>
+       <p>枝枝</p>
+       </a>
+    </div>
+    <ul>
+      <li><a href="#!"><img src="TC.png" width="50px" height="37px"></img></a></li>
+      <li><a href="#!"><img src="qx.png" width="50px" height="37px"></img></li>
+      <li><a href="#!"><img src="jc.png" width="50px" height="37px"></img></a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+var  enter=document.querySelector(".enter");
+var  card=document.querySelector(".Widget");
+function showcard() {
+ (card.style.display=="none")?card.style.display='block':card.style.display="none";
+ enter.style.border="none";
+}
+enter.onclick=showcard;
+</script>
+</body>
+</html>
