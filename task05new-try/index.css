@@ -119,7 +119,12 @@ html, body {
   background-repeat: no-repeat;
   background-position: left center;
   font-weight: 500;
-  color: black; }
+  color: black;
+  border-right: none; }
+
+.item-5 {
+  margin-top: auto;
+  margin-bottom: auto; }
 
 .footer {
   position: absolute;

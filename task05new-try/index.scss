@@ -126,8 +126,12 @@ html,body{
     background-position: left center;
     font-weight: 500;
 	color: black;
+	border-right: none;
 }
-
+.item-5{
+	margin-top:auto;
+	margin-bottom:auto;
+}
 .footer{
 	position: absolute;
 	bottom: 0;
