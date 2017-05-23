@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+	    @font-face {
+		  font-family: 'iconfont';  /* project id 306137 */
+		  src: url('https://at.alicdn.com/t/font_zhqnj304pnoskyb9.eot');
+		  src: url('https://at.alicdn.com/t/font_zhqnj304pnoskyb9.eot?#iefix') format('embedded-opentype'),
+		  url('https://at.alicdn.com/t/font_zhqnj304pnoskyb9.woff') format('woff'),
+		  url('https://at.alicdn.com/t/font_zhqnj304pnoskyb9.ttf') format('truetype'),
+		  url('https://at.alicdn.com/t/font_zhqnj304pnoskyb9.svg#iconfont') format('svg');
+		}
+		body{
+			font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+		}
+		.header-row1{
+		    line-height: 45px;
+			text-align: center;
+			font-size: 17px;
+			background-color: #5fc0cd;
+		}
+		
+		.header-row1 button{
+			width: 71px;
+			color: #5fc0cd;
+		}
+        .btn-tabs:hover{
+        	background-color: #55a8b3;
+        	color: white;
+        }
+        .header-row1 i{
+        	position: absolute;
+        	right: 5px;
+        	top: 3px;
+        	font-family: 'iconfont';
+        	color: white;
+        	font-size: 28px;
+        }
+		.header-row2 button{
+			height: 41px;
+			color: #afbac0;
+		}
+		.header-row2 span{
+			position: absolute;
+			right: 5px;
+			top: 48%;
+		}
+		.infor-container{
+			position: absolute;
+			right: 0;
+			left: 0;
+            top: 87.5px;
+			bottom: 50px;
+			overflow: auto;
+		}
+		.infor-container i{
+			font-family: 'iconfont';
+		}
+		.list-group-item-text{
+			font-size: 14px;
+			color: #afbac0;
+		}
+		.infor-textM{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			display: flex;
+            justify-content: space-between;
+		}
+        .infor-textT i,.infor-textB i{
+        	margin-right: 10px;
+        }
+        .textM-left{
+        	color: black;
+        	margin-left: 25px;
+        }
+        .textM-right{
+	        color: #e63b0e;
+			font-size: 15px;
+        }
+        .footer{
+	        height: 50px;
+	        font-size: 10px;
+	        display: flex;
+	        border-top: 1px solid #afbac0;}
+	 .footer i{
+		font-family: 'iconfont';
+	}
+	  .footer div{
+		flex: 1;
+	}
+    .footer-left{
+	text-align: right;}
+	.footer-left i{
+		font-size: 28px;
+		color: #5fc0cd;
+	}
+	.footer-left p{
+		padding-right: 4px;
+		color: #5fc0cd;
+	}
+    .footer-middle{
+	text-align: center;}
+	.footer-middle span{
+		display: inline-block;
+		width: 50px;
+		height:50px;
+		line-height: 50px;
+		border-radius: 50%;
+		background-color: #5fc0cd;
+	}
+	.footer-middle i{
+		font-size:25px;
+		color: white;
+	}
+    .footer-right{
+	text-align: left;}
+	.footer-right i{
+		font-size: 28px;
+		color: #afbac0;
+	}
+	.footer-right p{
+		padding-left: 4px;
+	}
+	</style>
+</head>
+<body>
+    <div class="header navbar-fixed-top">
+        <div class="header-row1">
+	    	<div class="btn-group" role="group" aria-label="tabs">
+		        <button type="button" class="btn btn-default btn-left btn-tabs">找雇主</button>
+				<button type="button" class="btn btn-default btn-right btn-tabs">找护工</button>
+         	</div>
+         	<i class="header-icon">&#xe6cb;</i>
+		</div>
+		<div class="header-row2">
+			<div class="btn-group btn-group-justified" role="group" aria-label="nav-bar">
+					  <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">Left<span class="caret"></span></button>
+					  </div>
+					  <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">Middle<span class="caret"></span></button>
+					  </div>
+					  <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">Right<span class="caret"></span></button>
+					  </div>
+			</div>
+         </div>
+    </div>
+    <div class="infor-container">
+    	<div class="list-group">
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+			  <a href="#" class="list-group-item">
+		        <p class="list-group-item-text infor-textT"><span><i>&#xe601;</i>服务日期</p>
+		        <p class="list-group-item-text infor-textM">
+		            <span class="textM-left">2015-7-5至2015-7-12</span>
+	                <span class="textM-right">25元/小时<i>&#xe64b;</i></span>
+	            </p>
+		        <p class="list-group-item-text  infor-textB"><i>&#xe63c;</i>北京.通州.果园</p>
+			  </a>
+		</div>
+    </div>
+    <div class="footer navbar-fixed-bottom">
+        <div class="footer-left"><a href="##"><i>&#xe639;</i><p>首页</p></a></div>
+        <div class="footer-middle"><a href="##">
+        <span><i>&#xe61d;</i></span></a></div>
+        <div class="footer-right"><a href="##"><i>&#xe600;</i><p>我的</p></a></div>
+    </div>
+</body>
+</html>

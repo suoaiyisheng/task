@@ -1,0 +1,151 @@
+@import url(reset.css);
+@font-face {
+  font-family: 'iconfont';
+  /* project id 306137 */
+  src: url("https://at.alicdn.com/t/font_zhqnj304pnoskyb9.eot");
+  src: url("https://at.alicdn.com/t/font_zhqnj304pnoskyb9.eot?#iefix") format("embedded-opentype"), url("https://at.alicdn.com/t/font_zhqnj304pnoskyb9.woff") format("woff"), url("https://at.alicdn.com/t/font_zhqnj304pnoskyb9.ttf") format("truetype"), url("https://at.alicdn.com/t/font_zhqnj304pnoskyb9.svg#iconfont") format("svg"); }
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; }
+
+a, a:hover {
+  text-decoration: none; }
+
+.header,
+.infor-container,
+.footer {
+  position: absolute;
+  right: 0;
+  left: 0; }
+
+.header, .footer {
+  z-index: 1; }
+
+.header {
+  top: 0;
+  height: 45px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #5fc0cd; }
+
+.tabs a {
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  line-height: 33px;
+  width: 73px;
+  border-radius: 3px; }
+
+.tabs-left {
+  background-color: #55a8b3;
+  color: white; }
+
+.tabs-right {
+  background-color: white;
+  color: #5fc0cd; }
+
+.header-icon {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-family: 'iconfont';
+  font-size: 25px;
+  color: white; }
+
+.header-nav {
+  display: flex;
+  line-height: 42.5px;
+  font-size: 14px;
+  text-align: center;
+  color: #afbac0;
+  border-bottom: 1px solid #afbac0; }
+
+.nav-item {
+  flex: 1;
+  border-right: 1px solid #afbac0; }
+  .nav-item i {
+    float: right;
+    font-family: 'iconfont'; }
+
+.infor-container {
+  top: 87.5px;
+  bottom: 50px;
+  overflow: auto; }
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  height: 90.5px;
+  padding: 0 15px;
+  color: #afbac0;
+  font-size: 14px;
+  border-bottom: 1px solid #afbac0; }
+  .list-item i {
+    font-family: 'iconfont';
+    font-size: 14px;
+    margin-right: 5px; }
+
+.item-infor {
+  flex: 1;
+  line-height: 30.16px; }
+
+.infor-middle {
+  padding-left: 19px;
+  color: #333333;
+  display: flex;
+  justify-content: space-between; }
+  .infor-middle span {
+    flex-shrink: 0; }
+  .infor-middle i {
+    font-size: 20px;
+    color: #5fc0cd; }
+
+.inforM-right {
+  color: #e63b0e;
+  font-size: 15px; }
+
+.footer {
+  bottom: 0;
+  height: 50px;
+  font-size: 10px;
+  display: flex;
+  border-top: 1px solid #afbac0; }
+  .footer i {
+    font-family: 'iconfont'; }
+  .footer div {
+    flex: 1; }
+
+.footer-left {
+  text-align: right; }
+  .footer-left i {
+    font-size: 28px;
+    color: #5fc0cd; }
+  .footer-left p {
+    padding-right: 4px;
+    color: #5fc0cd; }
+
+.footer-middle {
+  text-align: center; }
+  .footer-middle span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #5fc0cd; }
+  .footer-middle i {
+    font-size: 25px;
+    color: white; }
+
+.footer-right {
+  text-align: left; }
+  .footer-right i {
+    font-size: 28px;
+    color: #afbac0; }
+  .footer-right p {
+    padding-left: 4px; }
+
+/*# sourceMappingURL=task06.css.map */
