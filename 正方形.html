@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搞出一个正方形</title>
+	<style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+        body {
+            -webkit-appearance: none;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+             text-align: center;
+        }
+        ul{
+        	width: 600px;
+            margin:0.625rem;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .container {
+            display: inline-block;
+            position: relative;
+            width: 32%;
+        }
+        .dummy {
+            padding-top: 100%; /*实现正方形*/
+            width: 100%;
+            background: #ffa600;
+            border-radius:6px;
+        }
+        button{
+        	display: block;
+        	width: 100%;
+        	height: 40px;
+        	margin-top: 10px;
+        	font-size: 18px;
+        	color: #ffa600;
+        	border: 1px solid #ffa600;
+        	background-color: white;
+        	cursor:pointer;
+        }
+        button:hover{
+        	background-color: #ffa600;
+        	color: white;
+        }
+	</style>
+</head>
+<body>
+	<ul>
+	    <li class="container">
+	        <div class="dummy j-block1"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block2"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block3"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block4"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block5"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block6"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block7"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block8"></div>
+	    </li>
+	    <li class="container">
+	        <div class="dummy j-block9"></div>
+	    </li>
+	    <button>开始闪</button>
+	    <button>结束闪</button>
+    </ul>
+    <script type="text/javascript">
+        var Jblock=document.querySelectorAll(".dummy");
+    	var jbtn=document.querySelectorAll("button");
+    	var blockArray,colorArray;
+    	function selectBlock() {
+    	    for (var i = 0; i < Jblock.length; i++)
+            	Jblock[i].style.backgroundColor="#ffa600";
+            blockArray=[];
+    		colorArray=[];
+    		while(blockArray.length!=3){
+    	       var value;
+    	       value=".j-block"+parseInt(Math.random()*9+1);
+               if (blockArray.indexOf(value)==-1)
+                  blockArray.push(value);
+    		}//保证选入的块不一样
+    		for (var i = 0; i < 3; i++) {
+    			var blue=parseInt(Math.random()*255);
+    			var green=parseInt(Math.random()*255);
+    			var red=parseInt(Math.random()*255);
+    			colorArray.push("rgb("+red+","+green+","+blue+")");
+    		}
+    		for (var i = 0; i < blockArray.length; i++) {
+	    			var block=document.querySelector(blockArray[i]);
+	    			block.style.backgroundColor=colorArray[i];
+	    		}
+    	}
+    	function start() {
+               timeOutid=setInterval(selectBlock,1000);
+    	}
+    	function end() {
+    		clearInterval(timeOutid);
+            for (var i = 0; i < Jblock.length; i++)
+            	Jblock[i].style.backgroundColor="#ffa600";
+
+    	}
+    	jbtn[0].onclick=start;
+    	jbtn[1].onclick=end;
+    </script>
+</body>
+</html>
