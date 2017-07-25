@@ -85,6 +85,7 @@
     <script type="text/javascript">
         var Jblock=document.querySelectorAll(".dummy");
     	var jbtn=document.querySelectorAll("button");
+        var disabled=true;
     	var blockArray,colorArray;
     	function selectBlock() {
     	    for (var i = 0; i < Jblock.length; i++)
@@ -109,9 +110,13 @@
 	    		}
     	}
     	function start() {
+               if (disabled==true) {
                timeOutid=setInterval(selectBlock,1000);
+               disabled=false;
+           }
     	}
     	function end() {
+            disabled=true;
     		clearInterval(timeOutid);
             for (var i = 0; i < Jblock.length; i++)
             	Jblock[i].style.backgroundColor="#ffa600";
